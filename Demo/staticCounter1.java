@@ -6,7 +6,9 @@ import java.util.Scanner;
 //Declare static variables inside the class, outside methods or blocks.
 //You can access them without creating an object: ClassName.varName.
 //All instances share the same static variable.
+//static variables object.static_variable khup misleading vattay
 class staticCounter{
+    //ithe aapn counter la instance variable banavlela aahe
     static int counter = 0;
     String name;
     int times = 0;
@@ -17,6 +19,7 @@ class staticCounter{
 
     void updateCounter(){
         counter = counter+1;
+        System.out.println(this.name+" has updated it. Now its value is "+ staticCounter.counter);
         this.times++;
     }
 }
